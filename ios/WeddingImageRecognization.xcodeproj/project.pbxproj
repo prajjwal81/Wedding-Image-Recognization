@@ -13,8 +13,14 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		3BF0E8DC2CE4C2A5004F65CA /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 3BF0E8DB2CE4C2A5004F65CA /* Fonts */; };
+		485C03A1BFD2479CA45F1325 /* Sansation_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A37146E91FC84F41A6153B12 /* Sansation_Regular.ttf */; };
+		5F985CF470994F01AF85CCB8 /* Sansation_Light_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F09E710997264023AB199537 /* Sansation_Light_Italic.ttf */; };
+		75E4185D05F4474E940ED265 /* Sansation_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68703A46DA2948419AE3855C /* Sansation_Bold.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-WeddingImageRecognization-WeddingImageRecognizationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-WeddingImageRecognization-WeddingImageRecognizationTests.a */; };
+		7AAC86A0ED3E4DE7A6519050 /* Sansation_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F64EAA4DFE6647499C3BD802 /* Sansation_Light.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9C82F3D588F54429806CC291 /* Sansation_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34022581947641FAA7760309 /* Sansation_Italic.ttf */; };
+		C2349BC0832D44FD8DDD15B8 /* Sansation_Bold_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5A20AD2AE31845B4842A0FC0 /* Sansation_Bold_Italic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,14 +45,20 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = WeddingImageRecognization/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = WeddingImageRecognization/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-WeddingImageRecognization-WeddingImageRecognizationTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeddingImageRecognization-WeddingImageRecognizationTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		34022581947641FAA7760309 /* Sansation_Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Sansation_Italic.ttf; path = ../assets/fonts/Sansation_Italic.ttf; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-WeddingImageRecognization.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeddingImageRecognization.debug.xcconfig"; path = "Target Support Files/Pods-WeddingImageRecognization/Pods-WeddingImageRecognization.debug.xcconfig"; sourceTree = "<group>"; };
 		3BF0E8DB2CE4C2A5004F65CA /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = "../node_modules/react-native-vector-icons/Fonts"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-WeddingImageRecognization.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeddingImageRecognization.release.xcconfig"; path = "Target Support Files/Pods-WeddingImageRecognization/Pods-WeddingImageRecognization.release.xcconfig"; sourceTree = "<group>"; };
+		5A20AD2AE31845B4842A0FC0 /* Sansation_Bold_Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Sansation_Bold_Italic.ttf; path = ../assets/fonts/Sansation_Bold_Italic.ttf; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-WeddingImageRecognization-WeddingImageRecognizationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeddingImageRecognization-WeddingImageRecognizationTests.debug.xcconfig"; path = "Target Support Files/Pods-WeddingImageRecognization-WeddingImageRecognizationTests/Pods-WeddingImageRecognization-WeddingImageRecognizationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-WeddingImageRecognization.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeddingImageRecognization.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		68703A46DA2948419AE3855C /* Sansation_Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Sansation_Bold.ttf; path = ../assets/fonts/Sansation_Bold.ttf; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = WeddingImageRecognization/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-WeddingImageRecognization-WeddingImageRecognizationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeddingImageRecognization-WeddingImageRecognizationTests.release.xcconfig"; path = "Target Support Files/Pods-WeddingImageRecognization-WeddingImageRecognizationTests/Pods-WeddingImageRecognization-WeddingImageRecognizationTests.release.xcconfig"; sourceTree = "<group>"; };
+		A37146E91FC84F41A6153B12 /* Sansation_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Sansation_Regular.ttf; path = ../assets/fonts/Sansation_Regular.ttf; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F09E710997264023AB199537 /* Sansation_Light_Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Sansation_Light_Italic.ttf; path = ../assets/fonts/Sansation_Light_Italic.ttf; sourceTree = "<group>"; };
+		F64EAA4DFE6647499C3BD802 /* Sansation_Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Sansation_Light.ttf; path = ../assets/fonts/Sansation_Light.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +139,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				90E8FD1FAC704C72AF78C625 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -140,6 +153,20 @@
 				00E356EE1AD99517003FC87E /* WeddingImageRecognizationTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		90E8FD1FAC704C72AF78C625 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				68703A46DA2948419AE3855C /* Sansation_Bold.ttf */,
+				5A20AD2AE31845B4842A0FC0 /* Sansation_Bold_Italic.ttf */,
+				34022581947641FAA7760309 /* Sansation_Italic.ttf */,
+				F64EAA4DFE6647499C3BD802 /* Sansation_Light.ttf */,
+				F09E710997264023AB199537 /* Sansation_Light_Italic.ttf */,
+				A37146E91FC84F41A6153B12 /* Sansation_Regular.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -249,6 +276,12 @@
 				3BF0E8DC2CE4C2A5004F65CA /* Fonts in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				75E4185D05F4474E940ED265 /* Sansation_Bold.ttf in Resources */,
+				C2349BC0832D44FD8DDD15B8 /* Sansation_Bold_Italic.ttf in Resources */,
+				9C82F3D588F54429806CC291 /* Sansation_Italic.ttf in Resources */,
+				7AAC86A0ED3E4DE7A6519050 /* Sansation_Light.ttf in Resources */,
+				5F985CF470994F01AF85CCB8 /* Sansation_Light_Italic.ttf in Resources */,
+				485C03A1BFD2479CA45F1325 /* Sansation_Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -590,7 +623,10 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
@@ -662,7 +698,10 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = "$(inherited)  ";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
