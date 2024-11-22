@@ -36,6 +36,6 @@ export default Login;
 
 const styles = StyleSheet.create({
   container: {flex: 1, justifyContent: 'center', paddingTop: '90%'},
-  heading: {fontFamily: 'Sansation_Bold', fontSize: 20, textAlign: 'center'},
+  heading: {fontFamily: 'Sansation', fontSize: 20, textAlign: 'center'},
   modalContainer: {},
 });
