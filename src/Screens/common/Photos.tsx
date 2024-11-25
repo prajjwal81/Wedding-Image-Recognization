@@ -57,12 +57,12 @@ const Photos = () => {
       </View>
 
       <View style={styles.content}>
-        <View>
+        {/* <View>
           <Text style={styles.mainTitle}>My Photos</Text>
           <View style={{backgroundColor: 'rgba(0, 137, 123, 1)'}}>
             <Text>Share </Text>
           </View>
-        </View>
+        </View> */}
 
         {/* <FlatList
           data={categories}
