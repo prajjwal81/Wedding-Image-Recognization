@@ -6,6 +6,7 @@ interface ButtonInt {
 }
 
 export default function Button({press}: ButtonInt) {
+  console.log(press);
   return (
     <Pressable style={styles.container} onPress={() => press()}>
       <Text style={styles.text}>Get Started</Text>
