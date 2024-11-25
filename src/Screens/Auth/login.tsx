@@ -10,12 +10,20 @@ import {
 import React, {useState} from 'react';
 import LinearGradient from 'react-native-linear-gradient';
 import Button from '../common/Button';
+import CheckBox from '@react-native-community/checkbox';
+import Google from '../../Images/svg/google.svg';
 
 const Login = () => {
   const [modal, setModal] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
+  const [login, setLogin] = useState(false);
 
-  const modalHandler = () => {
+  const modalHandler = change => {
     setModal(prev => !prev);
+
+    if (change) {
+      setLogin(true);
+    }
   };
   return (
     <View style={styles.container}>
@@ -32,12 +40,15 @@ const Login = () => {
         </Text>
       </View>
 
-      <Button press={modalHandler} />
+      <Button press={() => modalHandler(false)} />
 
       <View style={{marginTop: '2%'}}>
         <Text style={styles.text}>
           Already Have an Account
-          <Pressable onPress={() => {}}>
+          <Pressable
+            onPress={() => {
+              modalHandler(true);
+            }}>
             <Text
               style={{
                 textDecorationLine: 'underline',
@@ -63,26 +74,37 @@ const Login = () => {
           end={{x: 0, y: 1}}
           style={styles.modalContainer}>
           <View style={styles.container2}>
-            <Text style={styles.title}>Sign up in Pix Studio Pro</Text>
+            <View style={styles.line} />
+            {login ? (
+              <Text style={styles.title}>Welcome Back!</Text>
+            ) : (
+              <Text style={styles.title}>Sign up in Pix Studio Pro</Text>
+            )}
+
             <Text style={styles.subtitle}>Lorem ipsum dolor sit amet.</Text>
 
-            <View style={styles.inputContainer}>
-              <TextInput
-                style={styles.input}
-                placeholder="Enter your name"
-                placeholderTextColor="#8E8E8E"
-              />
-            </View>
+            {login ? (
+              ''
+            ) : (
+              <>
+                <View style={styles.inputContainer}>
+                  <TextInput
+                    style={styles.input}
+                    placeholder="Enter your name"
+                    placeholderTextColor="#8E8E8E"
+                  />
+                </View>
 
-            <View style={styles.inputContainer}>
-              <TextInput
-                style={styles.input}
-                placeholder="Enter your Email"
-                placeholderTextColor="#8E8E8E"
-                keyboardType="email-address"
-              />
-            </View>
-
+                <View style={styles.inputContainer}>
+                  <TextInput
+                    style={styles.input}
+                    placeholder="Enter your Email"
+                    placeholderTextColor="#8E8E8E"
+                    keyboardType="email-address"
+                  />
+                </View>
+              </>
+            )}
             <View style={styles.inputContainer}>
               <TextInput
                 style={styles.input}
@@ -92,32 +114,36 @@ const Login = () => {
               />
             </View>
 
-            <Pressable style={styles.continueButton}>
+            <Pressable style={styles.continueButton} onPress={() => {}}>
               <Text style={styles.continueButtonText}>Continue</Text>
             </Pressable>
 
-            <View style={{alignItems: 'center'}}>
-              <View style={styles.checkboxContainer}>
-                {/* <CheckBox
-                value={isChecked}
-                onValueChange={setIsChecked}
-                tintColors={{true: '#2E7D6F', false: '#8E8E8E'}}
-              /> */}
-                <Text style={styles.checkboxText}>
-                  Agree With Terms and Conditions
-                </Text>
+            <View
+              style={{
+                alignItems: 'center',
+                flexDirection: 'row',
+                paddingHorizontal: '5%',
+              }}>
+              <View style={{transform: [{scaleX: 0.7}, {scaleY: 0.7}]}}>
+                <CheckBox
+                  value={isChecked}
+                  onValueChange={setIsChecked}
+                  tintColors={{true: '#2E7D6F', false: '#8E8E8E'}}
+                />
               </View>
+              <Text style={styles.checkboxText}>
+                Agree With Terms and Conditions
+              </Text>
+            </View>
+
+            <View style={{alignItems: 'center'}}>
+              <View style={styles.checkboxContainer}></View>
 
               <Text style={styles.orText}>Or Continue With</Text>
 
               <View style={styles.socialContainer}>
                 <Pressable style={styles.socialButton}>
-                  <Image
-                    source={{
-                      uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png',
-                    }}
-                    style={styles.socialIcon}
-                  />
+                  <Google />
                 </Pressable>
                 <Pressable style={styles.socialButton}>
                   <Image
@@ -143,19 +169,26 @@ const styles = StyleSheet.create({
   container2: {
     flex: 1,
     padding: 20,
-    justifyContent: 'center',
-    // alignItems: 'center',
+  },
+  line: {
+    width: '30%',
+    backgroundColor: 'white',
+    height: 7,
+    borderRadius: 20,
+    alignSelf: 'center',
+    marginBottom: '10%',
   },
   heading: {
-    fontFamily: 'Sansation_Bold',
+    fontFamily: 'Sansation-Bold',
     fontSize: 32,
     textAlign: 'center',
-    fontWeight: '700',
+    // fontWeight: '700',
   },
   text: {
     fontSize: 15,
     fontWeight: 400,
     textAlign: 'center',
+    fontFamily: 'Inter',
   },
 
   modalContainer: {flex: 1},
@@ -168,7 +201,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#FFFFFF',
     marginBottom: 10,
-    
   },
   subtitle: {
     fontSize: 14,
@@ -184,6 +216,7 @@ const styles = StyleSheet.create({
     elevation: 3,
     flexDirection: 'row',
     alignItems: 'center',
+    paddingVertical: 10,
   },
   input: {
     flex: 1,
@@ -210,30 +243,35 @@ const styles = StyleSheet.create({
   checkboxContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 20,
+    marginTop: '15%',
   },
   checkboxText: {
     fontSize: 14,
     color: '#000000',
-    marginLeft: 10,
+    marginLeft: '2%',
   },
   orText: {
     fontSize: 16,
     color: '#000000',
     marginBottom: 10,
-    fontWeight: 'bold',
+    fontWeight: '400',
     textDecorationLine: 'underline',
   },
   socialContainer: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
-    width: '60%',
+    justifyContent: 'space-around',
+    width: '100%',
+    paddingHorizontal: '10%',
   },
   socialButton: {
     backgroundColor: '#FFFFFF',
-    borderRadius: 50,
+    borderRadius: 20,
     elevation: 3,
     padding: 15,
+    marginTop: '5%',
+    width: '35%',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   socialIcon: {
     width: 40,
