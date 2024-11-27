@@ -9,6 +9,7 @@ import {
   Dimensions,
 } from 'react-native';
 import Entypo from 'react-native-vector-icons/Entypo';
+import Share from '../../../Images/svg/share.svg';
 
 const Photos = () => {
   //   const categories = [
@@ -57,10 +58,28 @@ const Photos = () => {
       </View>
 
       <View style={styles.content}>
-        <View>
+        <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
           <Text style={styles.mainTitle}>My Photos</Text>
-          <View style={{backgroundColor: 'rgba(0, 137, 123, 1)'}}>
-            <Text>Share </Text>
+          <View
+            style={{
+              backgroundColor: 'rgba(0, 137, 123, 1)',
+              width: '30%',
+              justifyContent: 'center',
+              alignItems: 'center',
+              padding: '3%',
+              borderRadius: 10,
+              flexDirection: 'row',
+            }}>
+            <Share />
+            <Text
+              style={{
+                color: 'white',
+                fontWeight: '900',
+                fontSize: 15,
+                marginLeft: 10,
+              }}>
+              Share{' '}
+            </Text>
           </View>
         </View>
 
