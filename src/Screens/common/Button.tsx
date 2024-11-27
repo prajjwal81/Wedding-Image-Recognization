@@ -3,13 +3,16 @@ import React from 'react';
 
 interface ButtonInt {
   press: () => void;
+  text: String;
+  height: String;
 }
 
-export default function Button({press}: ButtonInt) {
-  console.log(press);
+export default function Button({press, text, height}: ButtonInt) {
   return (
-    <Pressable style={styles.container} onPress={() => press()}>
-      <Text style={styles.text}>Get Started</Text>
+    <Pressable
+      style={[styles.container, {height: height ? height : '10%'}]}
+      onPress={() => press()}>
+      <Text style={styles.text}>{text}</Text>
     </Pressable>
   );
 }

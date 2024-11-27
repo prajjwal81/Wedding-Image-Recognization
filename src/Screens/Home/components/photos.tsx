@@ -9,8 +9,7 @@ import {
   Dimensions,
 } from 'react-native';
 import Entypo from 'react-native-vector-icons/Entypo';
-import Share from '../../Images/svg/share.svg';
-
+import Share from '../../../Images/svg/share.svg';
 const Photos = () => {
   //   const categories = [
   //     {

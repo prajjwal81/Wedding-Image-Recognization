@@ -4,10 +4,16 @@ import Photos from '../common/Photos';
 import ProfileIcon from '../../Images/svg/profile.svg';
 import MailIcon from '../../Images/svg/Mail.svg';
 import PhoneIcon from '../../Images/svg/phone.svg';
+import Entypo from 'react-native-vector-icons/Entypo';
 const Profile = () => {
   return (
     <View>
-      <Photos />
+      <View style={styles.header}>
+        <View style={{flexDirection: 'row', justifyContent: 'center'}}>
+          <Entypo name="camera" size={25} color="#FFF" />
+          <Text style={styles.headerTitle}>Pix Studio Pro</Text>
+        </View>
+      </View>
       <View style={styles.container}>
         <View
           style={[
@@ -53,6 +59,22 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#FFFFFF',
+    paddingTop: '10%',
+  },
+  header: {
+    backgroundColor: 'rgba(0, 137, 123, 1)',
+    borderBottomLeftRadius: 50,
+    borderBottomRightRadius: 50,
+    padding: 20,
+    alignItems: 'center',
+    paddingTop: '20%',
+  },
+  headerTitle: {
+    fontSize: 26,
+    color: '#FFFFFF',
+    marginBottom: 5,
+    fontFamily: 'Sansation-Bold',
+    marginLeft: 15,
   },
   circle: {
     backgroundColor: '#D9D9D9',

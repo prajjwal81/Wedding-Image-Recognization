@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   View,
   Text,
@@ -7,10 +7,14 @@ import {
   FlatList,
   TouchableOpacity,
   Dimensions,
+  Modal,
+  Pressable,
 } from 'react-native';
 import Entypo from 'react-native-vector-icons/Entypo';
+import Button from '../../common/Button';
 
 const YourAlbum = () => {
+  const [modal, setModal] = useState(false);
   const categories = [
     {
       id: 1,
@@ -36,7 +40,9 @@ const YourAlbum = () => {
 
   const renderCategory = ({item}) => {
     return (
-      <TouchableOpacity style={styles.categoryContainer}>
+      <TouchableOpacity
+        style={styles.categoryContainer}
+        onPress={() => setModal(true)}>
         <Image
           source={item?.image}
           style={styles.categoryImage}
@@ -74,6 +80,30 @@ const YourAlbum = () => {
           numColumns={2}
           showsVerticalScrollIndicator={false}
         />
+      </View>
+
+      <View style={styles.container}>
+        <Modal
+          visible={modal}
+          animationType="slide"
+          transparent
+          style={{borderWidth: 2}}>
+          <Pressable
+            style={styles.fakeHeight}
+            onPress={() => {
+              setModal(false);
+            }}
+          />
+          <View style={{backgroundColor: 'white', alignItems: 'center'}}>
+            <Text
+              style={{marginVertical: '5%', fontSize: 18, fontWeight: '800'}}>
+              Select All Your Photos
+            </Text>
+            <Button text={'Your Photos'} press={() => {}} height={'15%'} />
+            <View style={{marginVertical: '3%'}} />
+            <Button text={'All Photos'} press={() => {}} height={'15%'} />
+          </View>
+        </Modal>
       </View>
     </View>
   );
@@ -146,5 +176,9 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginBottom: 10,
     color: 'black',
+  },
+  fakeHeight: {
+    height: '70%',
+    backgroundColor: 'rgba(60, 60, 60, 0.5)',
   },
 });
