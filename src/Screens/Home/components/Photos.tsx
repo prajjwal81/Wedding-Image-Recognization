@@ -60,26 +60,9 @@ const Photos = () => {
       <View style={styles.content}>
         <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
           <Text style={styles.mainTitle}>My Photos</Text>
-          <View
-            style={{
-              backgroundColor: 'rgba(0, 137, 123, 1)',
-              width: '30%',
-              justifyContent: 'center',
-              alignItems: 'center',
-              padding: '3%',
-              borderRadius: 10,
-              flexDirection: 'row',
-            }}>
+          <View style={styles.btnContainer}>
             <Share />
-            <Text
-              style={{
-                color: 'white',
-                fontWeight: '900',
-                fontSize: 15,
-                marginLeft: 10,
-              }}>
-              Share{' '}
-            </Text>
+            <Text style={styles.btnText}>Share </Text>
           </View>
         </View>
 
@@ -162,5 +145,20 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginBottom: 10,
     color: 'black',
+  },
+  btnContainer: {
+    backgroundColor: 'rgba(0, 137, 123, 1)',
+    width: '30%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: '3%',
+    borderRadius: 10,
+    flexDirection: 'row',
+  },
+  btnText: {
+    color: 'white',
+    fontWeight: '900',
+    fontSize: 15,
+    marginLeft: 10,
   },
 });
