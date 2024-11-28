@@ -9,11 +9,12 @@ import {
 import React, {useState} from 'react';
 import YourAlbum from './components/YourAlbum';
 import Photos from '../common/Photos';
+import MultiAngleCapture from '../common/multiangleCamera';
 
 export default function Home() {
   return (
     <View>
-      <YourAlbum />
+      {/* <YourAlbum /> */}
       {/* <Photos /> */}
     </View>
   );

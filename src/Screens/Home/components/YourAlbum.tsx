@@ -94,7 +94,11 @@ const YourAlbum = () => {
               setModal(false);
             }}
           />
-          <View style={{backgroundColor: 'white', alignItems: 'center'}}>
+          <View
+            style={{
+              backgroundColor: 'white',
+              alignItems: 'center',
+            }}>
             <Text
               style={{marginVertical: '5%', fontSize: 18, fontWeight: '800'}}>
               Select All Your Photos
