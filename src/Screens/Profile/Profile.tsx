@@ -34,7 +34,7 @@ const Profile = () => {
             <MailIcon />
             <TextInput placeholder="Edit Email" style={styles.inputContainer} />
           </View>
-          <TextInput />
+
           <View style={styles.rowContainer}>
             <PhoneIcon />
             <TextInput
@@ -42,7 +42,7 @@ const Profile = () => {
               style={styles.inputContainer}
             />
           </View>
-          <TextInput />
+
           <Pressable style={styles.btnContainer}>
             <Text style={styles.btnTxt}>Update Profile</Text>
           </Pressable>
@@ -102,15 +102,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderColor: '#FFF',
     borderWidth: 2,
-    borderBottomColor: 'rgba(0, 0, 0, 0.15)',
+    // borderBottomColor: 'rgba(0, 0, 0, 0.15)',
     borderRadius: 20,
     shadowColor: '#00000040',
     shadowOffset: {width: 0, height: 8},
-    shadowOpacity: 0.8,
+    shadowOpacity: 0.4,
     shadowRadius: 5,
     // Shadow for Android
     elevation: 5,
     // width: '100%',
+    backgroundColor: 'white',
+    marginVertical: '3%',
   },
   inputContainer: {
     marginLeft: 10,
